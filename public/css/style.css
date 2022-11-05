@@ -80,5 +80,6 @@ ul.mainlinks li:last-child{
     color:white;
 }
 .form div span{
-    color:red
+    color:brown;
+    font-size: 10px;
 }
