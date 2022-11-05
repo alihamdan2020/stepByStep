@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a{
+    text-decoration: none;
+    color:royalblue
+}
+body{
+    width:90vw;
+    margin:auto
+}
+ul{
+    list-style-type: none;
+    display: flex;
+}
+ul.mainlinks li{
+  margin-right:25px;
+}
+ul.mainlinks li:last-child{
+    margin-right: 0;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom:25px
+}
+.maincontent{
+    position: relative;
+    height:400px;
+    
+    margin:auto;
+    border:0px solid green
+}
+
+.maincontent .form{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:200px
+}
+.form h3{
+    margin-bottom: 15px;
+    color:royalblue;
+    text-align: center;
+}
+.form div{
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.form div label{
+    color:#817e7e;
+    font-weight: lighter;
+    font-size: 12px;
+    margin-left:2px
+}
+.form div input{
+    padding:5px 2px;
+    color:#ccc;
+    outline: none;
+}
+
+.form div button{
+    width:75px;
+    outline:none;
+    background-color: white;
+    border:1px solid royalblue;
+    color:royalblue;
+    padding:7px 0px;
+    cursor: pointer;
+    
+}
+.form div button:hover{
+    background-color: royalblue;
+    color:white;
+}
+.form div span{
+    color:red
+}
