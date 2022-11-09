@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\userController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,9 +16,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-route::get('/',function(){
-    return view ("index");
-})->name('home');
+route::get('/',[HomeController::class,'mainPage'])->name('home');
+route::get('/show/{id}',[HomeController::class,'showDetails'])->name('showDetails');
 
 route::get('/aboutUs',function(){
     return view ("about");
