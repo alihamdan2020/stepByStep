@@ -19,6 +19,9 @@ use Illuminate\Support\Facades\Route;
 route::get('/',[HomeController::class,'mainPage'])->name('home');
 route::get('/show/{id}',[HomeController::class,'showDetails'])->name('showDetails');
 
+route::get('/{lang}',[HomeController::class,'changLang'])->name('changeLanguage');
+
+
 route::get('/aboutUs',function(){
     return view ("about");
 })->name("aboutUs");

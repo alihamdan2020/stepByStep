@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="{{url('css/style.css')}}">
     <title>@yield('title')</title>
 </head>
-<body>
+<body dir="{{__('message.dir')}}">
     <div class="header">
         <ul class='mainlinks'>
-            <li><a href="{{route('home')}}">Home</a></li>
-            <li><a href="{{route('aboutUs')}}">About Us</a></li>
-            <li><a href="{{route('FAQ')}}">FAQ's</a></li>
+            <li><a href="{{route('home')}}">{{__('message.home')}}</a></li>
+            <li><a href="{{route('aboutUs')}}">{{__('message.about')}}</a></li>
+            <li><a href="{{route('FAQ')}}">{{__('message.faq')}}</a></li>
+            <li><a href="{{route('changeLanguage','en')}}">english</a></li>
+            <li><a href="{{route('changeLanguage','ar')}}">arabic</a></li>
         </ul>
 
         <ul>
