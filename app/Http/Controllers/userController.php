@@ -38,7 +38,7 @@ class userController extends Controller
     // return redirect("login")->with("message","wrong username or passwprd");
 
     $cred=$req->only("email","password");
-
+//note to use auth , you must register by form and use hash function
      if(Auth::attempt($cred))
      return redirect("/");
      else
